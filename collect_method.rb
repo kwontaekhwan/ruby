@@ -13,7 +13,7 @@ square = Proc.new do |n|
   n**2
 end
 
-array.iterate!(square)
+array.iterate!(lambda {|n| n ** 2})
 array2.iterate!(square)
 
 puts array.inspect #[1, 4, 9, 16]
